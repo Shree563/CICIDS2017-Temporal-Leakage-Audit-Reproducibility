@@ -1,0 +1,20 @@
+# Core data handling
+pandas==2.2.2
+numpy==1.26.4
+
+# Machine learning models
+scikit-learn==1.5.2
+lightgbm==4.5.0
+xgboost==2.1.1
+
+# Class imbalance handling
+imbalanced-learn==0.12.4
+
+# Statistical testing
+scipy==1.13.1
+
+# Visualization (figure generation)
+matplotlib==3.9.2
+
+# Utilities
+psutil==6.0.0
