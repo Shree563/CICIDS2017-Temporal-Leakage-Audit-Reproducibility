@@ -18,3 +18,8 @@ matplotlib==3.9.2
 
 # Utilities
 psutil==6.0.0
+
+
+import pandas, numpy, sklearn, lightgbm, xgboost, imblearn, scipy, matplotlib
+for pkg in [pandas, numpy, sklearn, lightgbm, xgboost, imblearn, scipy, matplotlib]:
+    print(f"{pkg.__name__}=={pkg.__version__}")
