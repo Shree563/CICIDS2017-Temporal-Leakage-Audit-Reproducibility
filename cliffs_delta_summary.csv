@@ -1,0 +1,10 @@
+model,metric,cliffs_delta,magnitude
+RandomForest,Accuracy,1.0,large
+RandomForest,F1-Macro,1.0,large
+RandomForest,Attack Recall,1.0,large
+LightGBM,Accuracy,1.0,large
+LightGBM,F1-Macro,1.0,large
+LightGBM,Attack Recall,1.0,large
+XGBoost,Accuracy,1.0,large
+XGBoost,F1-Macro,1.0,large
+XGBoost,Attack Recall,1.0,large

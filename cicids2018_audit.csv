@@ -1,0 +1,7 @@
+model,split,accuracy,f1_macro,f1_weighted,attack_recall,FPR,ROC_AUC
+RandomForest,Random,0.9741,0.9663,0.974,0.9387,0.0133,0.9867
+RandomForest,Temporal,0.7802,0.4383,0.684,0.0,0.0002,0.8805
+LightGBM,Random,0.9787,0.9721,0.9785,0.9372,0.0065,0.9914
+LightGBM,Temporal,0.7802,0.4383,0.684,0.0,0.0001,0.9909
+XGBoost,Random,0.9795,0.973,0.9793,0.9278,0.002,0.9885
+XGBoost,Temporal,0.7803,0.4383,0.684,0.0,0.0001,0.8999
