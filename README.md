@@ -1,14 +1,47 @@
-# Temporal Leakage Bias in CIC-IDS 2017: A Multi-Model Evaluation Audit
+# CIC-IDS 2017 Temporal Leakage Audit — Reproducibility Repository
 
-Reproducibility artifact for the paper *"Temporal Leakage Bias in CIC-IDS 2017: A Multi-Model Evaluation Audit and Corrective Protocol"* (under review).
+Code, notebooks, and result files for the paper *"Temporal Leakage Bias in CIC-IDS 2017: A Multi-Model Evaluation Audit and Corrective Protocol"* (under review).
 
-## Summary
+## What this repo contains
 
-This repository contains the complete preprocessing pipeline, evaluation notebooks, and result files supporting a statistically validated, multi-model, multi-dataset audit of the **Temporal Leakage Bias** — the systematic performance inflation that occurs when network intrusion detection datasets with temporally segregated attack classes are evaluated using random train-test splits instead of temporally faithful splits.
+- Preprocessing and evaluation scripts for a random-split vs. temporal-split comparison on CIC-IDS 2017
+- A replication of the same protocol on CIC-IDS 2018
+- Statistical significance testing (Wilcoxon signed-rank, paired t-test) and Cliff's Delta effect size across 10 seeds
+- All raw result CSVs and the three figures used in the paper
 
-**Key findings:**
-- Random splitting inflates F1-macro by 34–63 percentage points and attack recall by 63–98 percentage points on CIC-IDS 2017, across Random Forest, LightGBM, XGBoost, and a multilayer perceptron (Wilcoxon signed-rank p = 0.002 for all nine model–metric pairs, Cliff's δ = 1.000).
-- Replication on CIC-IDS 2018 shows the bias not only generalises but intensifies: temporal-split attack recall collapses to exactly 0.0000 across all three tree-based models.
-- A formal theoretical treatment (Section 4.5 of the paper) proves random splitting leaks with near-certainty for any day-exclusive attack class of practical size, and establishes a structural upper bound on achievable temporal-split performance.
+Full methodology, results, and discussion are in the paper — see citation below. This repo is for reproducing the numbers, not for re-explaining them.
 
-## Repository Structure
+## Running the notebooks
+
+1. Download the datasets directly from the official sources (not redistributed here):
+   - CIC-IDS 2017: https://www.unb.ca/cic/datasets/ids-2017.html
+   - CIC-IDS 2018: https://www.unb.ca/cic/datasets/ids-2018.html
+
+2. Install dependencies:
+```bash
+   pip install -r requirements.txt
+```
+
+3. Run notebooks `01` through `05` in order. Each saves its outputs to `results_csv/`, consumed by later notebooks.
+
+## Notes for anyone re-running this
+
+- Port-number columns (`Destination Port`, `Source Port`) are dropped before scaling — leaving them in destabilises LightGBM specifically. See `02_multiclass_audit.ipynb` for the diagnostic.
+- Classes with fewer than 10 real samples are excluded from multiclass evaluation (SMOTE is unreliable at that scale).
+- CIC-IDS 2018's numeric columns are sometimes string-typed in the source CSVs — coerce to numeric *before* dropping non-numeric columns, or you'll silently lose real features.
+
+## Citation
+
+```bibtex
+@article{[CITEKEY],
+  title   = {Temporal Leakage Bias in CIC-IDS 2017: A Multi-Model Evaluation Audit and Corrective Protocol},
+}
+```
+
+## License
+
+Code: MIT License (see `LICENSE`). CIC-IDS 2017/2018 datasets are governed by UNB's own terms of use, not redistributed here.
+
+## Contact
+
+[Your Name] — [your.email@university.edu]
