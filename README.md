@@ -12,3 +12,9 @@ This repository contains the complete preprocessing pipeline, evaluation noteboo
 - A formal theoretical treatment (Section 4.5 of the paper) proves random splitting leaks with near-certainty for any day-exclusive attack class of practical size, and establishes a structural upper bound on achievable temporal-split performance.
 
 ## Repository Structure
+
+## Repository layout
+- `notebooks/` - evaluation notebooks (binary and multiclass audit, significance tests, Cliff's delta, CSE-CIC-IDS 2018 replication)
+- `results/` - result CSVs and `requirements.txt`
+- `figures/` - figure files
+- `experiment_logs/` - run logs for the later experiments (duplicate-definition reruns, within-window controls, benign-only detectors; the CIC-DDoS2019 and UNSW-NB15 notebooks and run files are not yet in this repository)
