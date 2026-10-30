@@ -1,0 +1,12 @@
+# Environment of the final run (results/final_run_v10), taken from results/final_run_v10/environment.txt
+# Python 3.13 (Google Colab, L4 runtime). Only the packages the experiments import are listed;
+# the complete `pip freeze` of the run is in results/final_run_v10/environment.txt.
+numpy==2.1.3
+pandas==2.2.3
+pyarrow==23.0.1
+scipy==1.16.3
+scikit-learn==1.6.1
+lightgbm==4.6.0
+xgboost==3.3.0
+imbalanced-learn==0.14.2
+matplotlib==3.10.0

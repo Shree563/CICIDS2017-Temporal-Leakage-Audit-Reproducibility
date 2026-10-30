@@ -1,0 +1,40 @@
+# Python / notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Large intermediate files (kept on Drive, not in the repository)
+*.parquet
+*.pkl
+*.joblib
+*.npy
+*.npz
+step*_scores/
+step*_preds/
+step*_pred_dumps/
+
+# Raw datasets are not redistributed (see README, "Data sources")
+data/
+raw/
+*.pcap
+*.pcapng
+
+# Secrets and credentials
+*.token
+*token*.txt
+.git-credentials
+
+# Paper sources are kept out of this repository
+*.tex
+*.bib
+manuscript/
+paper/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

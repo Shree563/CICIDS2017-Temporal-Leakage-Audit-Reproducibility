@@ -1,0 +1,11 @@
+# Environment of the earlier audit notebooks (notebooks/01 - 05) and the top-level results/*.csv.
+# For the final run (results/final_run_v10) use requirements.txt.
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.2
+lightgbm==4.5.0
+xgboost==2.1.1
+imbalanced-learn==0.12.4
+scipy==1.13.1
+matplotlib==3.9.2
+psutil==6.0.0
