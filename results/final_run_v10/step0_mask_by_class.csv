@@ -1,0 +1,46 @@
+condition,label,all_before,all_after,friday_before,friday_after
+D0 (none),BENIGN,2271320,2271320,413933,413933
+D0 (none),Bot,1956,1956,1956,1956
+D0 (none),DDoS,128025,128025,128025,128025
+D0 (none),DoS GoldenEye,10293,10293,0,0
+D0 (none),DoS Hulk,230124,230124,0,0
+D0 (none),DoS Slowhttptest,5499,5499,0,0
+D0 (none),DoS slowloris,5796,5796,0,0
+D0 (none),FTP-Patator,7935,7935,0,0
+D0 (none),Heartbleed,11,11,0,0
+D0 (none),Infiltration,36,36,0,0
+D0 (none),PortScan,158804,158804,158804,158804
+D0 (none),SSH-Patator,5897,5897,0,0
+D0 (none),Web Attack � Brute Force,1507,1507,0,0
+D0 (none),Web Attack � Sql Injection,21,21,0,0
+D0 (none),Web Attack � XSS,652,652,0,0
+"D1 (record, ports incl.)",BENIGN,2271320,2095057,413933,375204
+"D1 (record, ports incl.)",Bot,1956,1948,1956,1948
+"D1 (record, ports incl.)",DDoS,128025,128014,128025,128014
+"D1 (record, ports incl.)",DoS GoldenEye,10293,10286,0,0
+"D1 (record, ports incl.)",DoS Hulk,230124,172846,0,0
+"D1 (record, ports incl.)",DoS Slowhttptest,5499,5228,0,0
+"D1 (record, ports incl.)",DoS slowloris,5796,5385,0,0
+"D1 (record, ports incl.)",FTP-Patator,7935,5931,0,0
+"D1 (record, ports incl.)",Heartbleed,11,11,0,0
+"D1 (record, ports incl.)",Infiltration,36,36,0,0
+"D1 (record, ports incl.)",PortScan,158804,90694,158804,90694
+"D1 (record, ports incl.)",SSH-Patator,5897,3219,0,0
+"D1 (record, ports incl.)",Web Attack � Brute Force,1507,1470,0,0
+"D1 (record, ports incl.)",Web Attack � Sql Injection,21,21,0,0
+"D1 (record, ports incl.)",Web Attack � XSS,652,652,0,0
+"D2 (model view, ports excl.)",BENIGN,2271320,1896672,413933,346384
+"D2 (model view, ports excl.)",Bot,1956,1437,1956,1437
+"D2 (model view, ports excl.)",DDoS,128025,128014,128025,128014
+"D2 (model view, ports excl.)",DoS GoldenEye,10293,10286,0,0
+"D2 (model view, ports excl.)",DoS Hulk,230124,172846,0,0
+"D2 (model view, ports excl.)",DoS Slowhttptest,5499,5228,0,0
+"D2 (model view, ports excl.)",DoS slowloris,5796,5385,0,0
+"D2 (model view, ports excl.)",FTP-Patator,7935,5931,0,0
+"D2 (model view, ports excl.)",Heartbleed,11,11,0,0
+"D2 (model view, ports excl.)",Infiltration,36,36,0,0
+"D2 (model view, ports excl.)",PortScan,158804,1956,158804,1956
+"D2 (model view, ports excl.)",SSH-Patator,5897,3219,0,0
+"D2 (model view, ports excl.)",Web Attack � Brute Force,1507,1470,0,0
+"D2 (model view, ports excl.)",Web Attack � Sql Injection,21,21,0,0
+"D2 (model view, ports excl.)",Web Attack � XSS,652,652,0,0

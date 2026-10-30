@@ -1,0 +1,16 @@
+condition,day,flows,removed,share_removed,kept
+D0 (none),monday,529481,0,0.0,529481
+D0 (none),tuesday,445645,0,0.0,445645
+D0 (none),wednesday,691406,0,0.0,691406
+D0 (none),thursday,458626,0,0.0,458626
+D0 (none),friday,702718,0,0.0,702718
+"D1 (record, ports incl.)",monday,529481,26831,0.050674150724955194,502650
+"D1 (record, ports incl.)",tuesday,445645,24069,0.05400935722379921,421576
+"D1 (record, ports incl.)",wednesday,691406,89128,0.12890834039623608,602278
+"D1 (record, ports incl.)",thursday,458626,60192,0.1312441946160924,398434
+"D1 (record, ports incl.)",friday,702718,106858,0.1520638435332523,595860
+"D2 (model view, ports excl.)",monday,529481,70650,0.1334325499876294,458831
+"D2 (model view, ports excl.)",tuesday,445645,56351,0.12644818184878098,389294
+"D2 (model view, ports excl.)",wednesday,691406,118147,0.1708793386230377,573259
+"D2 (model view, ports excl.)",thursday,458626,124637,0.2717617405031551,333989
+"D2 (model view, ports excl.)",friday,702718,224927,0.32008145514986097,477791

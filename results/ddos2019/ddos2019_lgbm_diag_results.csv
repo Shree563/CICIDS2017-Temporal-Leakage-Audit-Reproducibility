@@ -1,0 +1,13 @@
+design,variant,train_acc,test_acc,n_pred_classes,top_pred,top_share,secs
+A_temporal,"default (paper setting, unweighted)",0.252,0.2778,11,NetBIOS,0.72384,75
+A_temporal,learning_rate 0.05,0.83998,0.64591,13,NetBIOS,0.27326,55
+A_temporal,learning_rate 0.02,0.85845,0.6334,13,MSSQL,0.27921,54
+A_temporal,"reg_lambda 1, min_child_samples 50",0.863885,0.84299,12,MSSQL,0.27844,50
+A_temporal,"min_sum_hessian 0.01, reg_lambda 1",0.86403,0.84406,12,MSSQL,0.27839,51
+A_temporal,"num_leaves 15, lr 0.05, reg_lambda 1",0.8591,0.85042,12,MSSQL,0.27914,43
+random,"default (paper setting, unweighted)",0.48989375,0.49135,10,Syn,0.3033,45
+random,learning_rate 0.05,0.901025,0.898175,13,tftp,0.19855,42
+random,learning_rate 0.02,0.8986875,0.89695,12,tftp,0.198575,41
+random,"reg_lambda 1, min_child_samples 50",0.90160625,0.8979,13,tftp,0.198525,37
+random,"min_sum_hessian 0.01, reg_lambda 1",0.9020875,0.89765,13,tftp,0.198525,40
+random,"num_leaves 15, lr 0.05, reg_lambda 1",0.8988125,0.8972,13,tftp,0.198525,32
