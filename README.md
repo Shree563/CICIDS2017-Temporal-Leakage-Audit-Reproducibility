@@ -2,7 +2,7 @@
 
 Code, result files and run logs for the manuscript *"Benchmark Validity in ML-Based Intrusion Detection: Temporal Leakage versus Unseen-Attack Emergence under Chronological Evaluation"* (under review).
 
-All code, notebooks, seeds, masks and result files for the manuscript are available in this repository. The raw datasets and the manuscript itself are not included. Any further material needed to check a result (for example the row-level duplicate masks and other intermediate files that are too large for the repository) is available from the author on request; see [Known gaps](#known-gaps) for what is not in the repository.
+All code, notebooks, seeds, masks and result files for the manuscript are available in this repository. The raw datasets and the manuscript itself are not included. Any further material needed to check a result (for example the row-level duplicate masks and other intermediate files that are too large for the repository) is available from the author on request.
 
 ## What the study measures
 
