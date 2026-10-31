@@ -83,13 +83,15 @@ The final CIC-IDS 2017 run, produced in one notebook with one pinned environment
 | Notebook | Content |
 |---|---|
 | `01_binary_audit` – `05_cicids2018_replication` | earlier audit: binary and multiclass audit, significance tests, Cliff's δ, CSE-CIC-IDS 2018 replication (`requirements-legacy.txt`) |
-| `06_final_run_v10` | final run: duplicate masks, Steps 0–6, the CIC-DDoS2019 and UNSW-NB15 experiments, the benign-only baseline and the later controls (`requirements.txt`) |
+| `06_final_run_v10` | final run: duplicate masks, Steps 0 and 2–6 (the Step 1 cell is not included, see Known gaps), the CIC-DDoS2019 and UNSW-NB15 experiments, the benign-only baseline and the later controls (`requirements.txt`) |
 
 The notebooks were written for Google Colab and read data from Google Drive (`/content/drive/MyDrive/...`). Adjust the path constants at the top of each notebook to run them elsewhere. Cell outputs are kept so that the printed results can be compared without rerunning.
 
 ## Known gaps
 
-Three result groups are included as produced, but the notebook cells that generated them were overwritten during development and are **not** in `06_final_run_v10`:
+Four result groups are included as produced, but the notebook cells that generated them were overwritten or not carried over, and are **not** in `06_final_run_v10`:
+
+- `step1_runs.csv`, `step1_features.csv`, `step1_port_check.csv` and `step1_table6_D0/D1/D2.csv` — the binary random-versus-chronological runs. Step 3 and the ten-seed port check reuse this pipeline (their cells assert agreement with the Step 1 rows), but the Step 1 cell itself is not in the notebook.
 
 - `step8_table10_per_class.csv` — the multiclass random-split run. Its LightGBM rows come from a configuration that diverged (balanced class weights together with SMOTE gave accuracy 0.073). They are kept as a documented diagnostic and are not a reportable result.
 - `step9_classweight_runs.csv` — the unweighted class-weighting control.
