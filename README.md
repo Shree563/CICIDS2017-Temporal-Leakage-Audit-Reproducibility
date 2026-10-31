@@ -95,6 +95,8 @@ Three result groups are included as produced, but the notebook cells that genera
 - `step9_classweight_runs.csv` — the unweighted class-weighting control.
 - `step10_closer_perseed.csv` and `step10_closer_nearest_family.csv` — the nearest-attack-family analysis. It follows the Step 6 proximity analysis (same feature space and reference rule, query subsets drawn with a different random state).
 
+In addition, the Bot-window diagnostics (`cic2017_bot_diagnostics_runs.csv`, cells "CELL 38" and "CELL 39" of the notebook) were produced with helper functions defined in an earlier cell ("CELL 37") that no longer exists in the notebook. Their outputs are kept in the notebook and the numbers in the manuscript's Bot-window paragraph come from them, but those two cells cannot be rerun on their own.
+
 These files can be checked against the logs but not regenerated from this repository. In `step8_table10_per_class.csv` the class names `Web Attack – Brute Force` and `Web Attack – XSS` appear with a replacement character because the source label contains a non-UTF-8 dash.
 
 The parquet intermediates (cleaned data, duplicate masks) and the per-run prediction dumps are too large for the repository and are not included.
