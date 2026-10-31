@@ -2,7 +2,7 @@
 
 Code, result files and run logs for the manuscript *"Benchmark Validity in ML-Based Intrusion Detection: Temporal Leakage versus Unseen-Attack Emergence under Chronological Evaluation"* (under review).
 
-The repository holds the experiment notebooks and the per-run result CSVs behind the reported numbers. It does not hold the raw datasets or the manuscript.
+All code, notebooks, seeds, masks and result files for the manuscript are provided here, except for the items listed under [Known gaps](#known-gaps). The raw datasets and the manuscript itself are not included.
 
 ## What the study measures
 
